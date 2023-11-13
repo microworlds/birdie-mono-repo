@@ -1,0 +1,39 @@
+.env
+cache
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+npm-debug.log
+build/
+coverage/
+node_modules/
+tmp/
+package-lock.json
+
+.DS_Store
+node_modules
+storage
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.git
+.serverless
+
+data/
+pal.js

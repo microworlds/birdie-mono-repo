@@ -1,0 +1,26 @@
+{
+  "name": "actor-little-birdie-scraper",
+  "version": "1.1.1",
+  "description": "Scrape `Nine` website to extract coupon codes",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "Little",
+    "Birdie",
+    "scraper"
+  ],
+  "author": "Caleb David",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "apify": "^3.0.2",
+    "chrono-node": "^2.7.0",
+    "crawlee": "^3.0.4",
+    "dotenv": "^16.3.1",
+    "linkedom": "^0.16.1",
+    "sitemapper": "^3.2.6"
+  }
+}

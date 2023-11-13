@@ -1,0 +1,37 @@
+{
+	"title": "Little Birdie Scraper",
+	"type": "object",
+	"schemaVersion": 1,
+	"properties": {
+		"maxConcurrency": {
+			"title": "Maximum request concurrency",
+			"description": "Set the max request concurrency",
+			"default": 3,
+			"prefill": 3,
+			"type": "integer",
+			"editor": "number"
+		},
+		"maxRequestRetries": {
+			"title": "Maximum request retries",
+			"description": "Set the max request retries",
+			"default": 3,
+			"prefill": 3,
+			"type": "integer",
+			"editor": "number"
+		},
+		"proxyConfig": {
+			"title": "Proxy configuration",
+			"type": "object",
+			"description": "This is required if you want to use Apify Proxy.",
+			"prefill": {
+				"useApifyProxy": true
+			},
+			"default": {
+				"useApifyProxy": true
+			},
+			"editor": "proxy",
+			"sectionCaption": "Proxy configuration",
+			"sectionDescription": "Choose which proxies to use."
+		}
+	}
+}

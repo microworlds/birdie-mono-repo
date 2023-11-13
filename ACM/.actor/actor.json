@@ -1,0 +1,59 @@
+{
+  "actorSpecification": 1,
+  "name": "actor-little-birdie-scraper",
+  "title": "Little Birdie Scraper",
+  "description": "Scrape Nine website to extract coupon codes",
+  "version": "0.0.1",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Output",
+      "description": "Too see all scraped properties, export the whole dataset or select All fields instead of Overview",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "description": "Selected fields from the dataset",
+          "transformation": {
+            "fields": [
+              "merchant_logo",
+              "code",
+              "title",
+              "code_id",
+              "merchant_url"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "columns": [
+              {
+                "label": "Merchant Logo",
+                "format": "image",
+                "field": "merchant_logo"
+              },
+              {
+                "label": "Coupon Code",
+                "format": "text",
+                "field": "code"
+              },
+              {
+                "label": "Title",
+                "format": "text",
+                "field": "title"
+              },
+              {
+                "label": "Code ID",
+                "format": "text",
+                "field": "code_id"
+              },
+              {
+                "label": "Merchant URL",
+                "format": "link",
+                "field": "merchant_url"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

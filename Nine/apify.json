@@ -1,0 +1,8 @@
+{
+	"name": "actor-little-birdie-scraper",
+	"version": "1.0",
+	"buildTag": "latest",
+	"env": {
+      "npm_config_loglevel": "silent"
+    }
+}
